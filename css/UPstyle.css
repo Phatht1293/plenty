@@ -1,0 +1,424 @@
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+#div_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#main_cont{
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+}
+
+/**/
+
+
+#cont_left{
+    width: 16%;
+    height:100%;
+    position:fixed ;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 1px 5px 10px 1px rgb(158, 158, 158);
+    float: left;
+
+}
+
+#header{
+    height: 55px;
+    background-color: red;
+    margin: 20px;
+}
+
+#header_cont{
+}
+
+#logo{
+    width: fit-content;
+}
+#logo:hover{
+    filter: brightness(150%);
+}
+
+
+/**/
+
+#nav_bar{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+#list_a{
+    
+}
+
+#nav_bar a{
+    text-decoration: none;
+    color: red;   
+    transition: 0.4s;
+}
+#nav_bar a:hover{
+text-decoration: underline;
+}
+
+
+
+#list_nav{
+    padding-top: 13px;
+    height: 35px;
+    width: 80%;
+    background-color: white;
+    float: left;
+    color: red;  
+    list-style-type: none;  
+    border-radius: 5px 35px 5px 35px;
+    transition: 0.4s;
+    margin: 5px;
+    margin-left: 25px;
+    box-shadow: 1px 5px 8px 1px rgb(133, 68, 68);
+    opacity: 80%;
+
+}
+#list_nav:hover{
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 25px 25px 25px 25px;
+    opacity: 120%;
+}
+
+
+
+
+
+/**/
+
+
+#cont_right{
+    float: right;
+    width: 84%;
+    height: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+/**/
+
+#quanly_nhanvien_cont,#donvi_vanchuyen_cont{
+    width:1050px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(253, 253, 253);
+    height: fit-content;
+    color:rgb(87, 45, 15);
+    margin: 45px 45px 45px 45px;
+    float: left; 
+    box-shadow: 1px 5px 10px 1px rgb(158, 158, 158);
+}
+
+#quanly_nhanvien h2,#donvi_vanchuyen h2{
+    width: 95%;
+    background-color: red;
+    padding: 10px;
+    padding-left: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 40px;
+    float: right;
+    box-shadow: 1px 5px 10px 1px rgb(158, 158, 158);
+    transition: 0.3s;
+}
+#quanly_nhanvien h2:hover,#donvi_vanchuyen h2:hover{
+    width: 100%;
+}
+
+#quanly_nhanvien form{
+    text-align: center;
+}
+
+
+#quanly_nhanvien input[type=text],input[type=number],select{
+  padding: 5px 20px;
+  margin-right: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#ip_id{
+    width: 90px;
+}
+#ip_name{
+    width: 150px;
+}
+#ip_age{
+    width: 80px;
+}
+#ip_position{
+    width: 185px;
+}
+#ip_phone{
+    width: 170px;
+}
+#ip_timeserving{
+    width: 157px;
+}
+#ip_image{
+    width: 277px;
+}
+#ip_idnumber{
+    width: 178px;
+}
+
+
+#quanly_nhanvien label{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+
+
+#quanly_nhanvien button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    width: 125px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 108px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+}
+#quanly_nhanvien button:hover{
+    box-shadow: 1px 5px 8px 1px gray;
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+#tittle_staff_list{
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+
+#show_quanly_nhanvien{
+
+    margin-top: 10px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 45px;
+    text-align: center;
+    box-shadow: 1px 2px 10px 1px rgb(170, 170, 170);
+}
+
+
+
+#show_quanly_nhanvien th{
+    border: none;
+    background-color: rgb(247, 70, 70);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px 1px rgb(170, 170, 170);
+}
+
+#show_quanly_nhanvien td{
+    border-radius: 5px;
+}
+
+
+#show_quanly_nhanvien tr:hover{
+    box-shadow: 1px 2px 8px 2px rgb(170, 170, 170);
+}
+
+
+#show_quanly_nhanvien img{
+    width: 50px;
+    transition: 0.5s;
+}
+#show_quanly_nhanvien img:hover{
+    width: 150px;
+    box-shadow: 1px 5px 10px 1px rgb(170, 170, 170);
+}
+
+
+
+/**/
+
+
+#quanly_sanpham_cont{
+    width:1050px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(253, 253, 253);
+    height: fit-content;
+    color:rgb(87, 45, 15);
+    margin: 45px 45px 45px 45px;
+    float: left; 
+    box-shadow: 1px 5px 10px 1px rgb(158, 158, 158);
+}
+
+#quanly_sanpham h2{
+    width: 95%;
+    background-color: red;
+    padding: 10px;
+    padding-left: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 40px;
+    float: right;
+    box-shadow: 1px 5px 10px 1px rgb(158, 158, 158);
+    transition: 0.3s;
+}
+#quanly_sanpham h2:hover{
+    width: 100%;
+}
+
+#quanly_sanpham form{
+    text-align: center;
+}
+
+#quanly_sanpham input[type=text],input[type=number],select{
+    width: 150px;
+  padding: 5px 20px;
+  margin-right: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+
+#quanly_sanpham label{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    
+}
+
+#quanly_sanpham button{
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 170px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(218, 0, 0);
+    transition: 0.2s;
+    color: white;
+}
+#quanly_sanpham button:hover{
+    box-shadow: 1px 5px 8px 1px gray;
+    background-color: rgb(255, 255, 255);
+    border: rgb(218, 0, 0);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+#tittle_product_list{
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+
+#show_quanly_sanpham{
+    margin-top: 10px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 130px;
+    text-align: center;
+    box-shadow: 1px 2px 10px 1px rgb(170, 170, 170);
+}
+
+
+#show_quanly_sanpham th{
+    border: none;
+    background-color: rgb(247, 70, 70);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px 1px rgb(170, 170, 170);
+}
+
+#show_quanly_sanpham td{
+    border-radius: 5px;
+}
+
+#show_quanly_sanpham tr:hover{
+    box-shadow: 1px 2px 8px 2px rgb(170, 170, 170);
+}
+
+#show_quanly_sanpham img{
+    width: 80px;
+    transition: 0.5s;
+}
+#show_quanly_sanpham img:hover{
+    width: 250px;
+    box-shadow: 1px 5px 10px 1px rgb(170, 170, 170);
+}
+
+
+/**/
+#donvi_vanchuyen_cont
+{
+
+}
+#donvi_vanchuyen{
+
+}   
+
+#show_donvi_vanchuyen{
+
+}
+#show_line_s_u{
+    border: 1px solid rgb(180, 180, 180);
+    margin: 25px;
+    border-radius: 5px;
+    height: 50px;
+}
+#s_u_name{
+    float: left;
+    margin: 15px;
+}
+#s_u_cod{
+    float: left;
+    color: red;margin: 15px;
+}

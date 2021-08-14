@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plenty User Page</title>
+    <link rel="stylesheet" href="/css/UPstyle.css">
+    <link rel="stylesheet" href="/css/UPstyle2.css">
+</head>
+<body>
+
+<!---->
+<div id="div_wrapper" >
+    
+    <!---->
+
+
+    <div id="main_cont">
+       
+
+        <!--Navigation bar-->
+        <div id="cont_left">
+            <div id="header">
+                <div id="header_cont">        
+                    <div id="logo">
+                        <a href="#"><img src="/img/banner/bn2.png" width="205px" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="nav_bar">
+                    
+                    <!--Show nav_bar-->
+                  
+            </div>
+
+
+            
+        </div>
+
+
+        <div id="cont_right">
+            <!--Quản lý nhân viên-->
+            <div id="quanly_nhanvien_cont">
+
+                
+                <div id="quanly_nhanvien">
+                    <H2>QUẢN LÝ NHÂN VIÊN </H2>
+                    <form>
+                        <label for="">Mã nhân viên </label>
+                        <input type="text" name="" id="ip_id">
+                        <label for="">Tên nhân viên </label>
+                        <input type="text" name="" id="ip_name">
+                        <label for="">Tuổi </label>
+                        <input type="number" name="" id="ip_age">
+                        <label for="">Vị trí </label>
+                        <select name="" id="ip_position">
+                            <option value="Nhân viên bán hàng">Nhân viên bán hàng</option>
+                            <option value="Thu ngân">Thu ngân</option>
+                            <option value="Tạp vụ">Tạp vụ</option>
+                        </select> 
+                    </br></br>
+                        <label for="">Số điện thoại</label>
+                        <input type="number" name=""  id="ip_phone">
+                    
+                        <label for="">T/gian làm việc</label>
+                        <select name="" id="ip_timeserving">
+                            <option value="8 A.M to 11 A.M">8 A.M to 11 A.M</option>
+                            <option value="1 P.M to 4 P.M">1 P.M to 4 P.M</option>
+                            <option value="Full-time">Full-time</option>
+                        </select>          
+                    </br></br>         
+                        <label for="">Hình 3x4</label>
+                        <input type="text" name=""  id="ip_image">
+                        <label for="">Số CMND/CCCD</label>
+                        <input type="number" name=""  id="ip_idnumber">
+                    </br></br>
+                    </form>
+                    <button onclick="add_staff_list()">Thêm nhân viên</button>
+                    <button onclick="mod_staff()">Sửa thông tin</button>
+                    <button onclick="search_staff()">Tìm</button>
+                    <button onclick="delete_staff()">Xóa</button>
+                    <div id="tittle_staff_list">
+                        <h3>Danh sách nhân viên:</h3>
+                    </div>
+                    <table id="show_quanly_nhanvien">
+                        <th>Mã nhân viên</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên</th>
+                        <th>Tuổi</th>
+                        <th>Vị trí</th>
+                        <th>Số điện thoại</th>
+                        <th>Thời gian làm việc</th>
+                        <th>Số CMND/CCCD</th>
+                        <!--DOM here-->
+                    </table>    
+                </div>
+            </div>
+
+            <!--Quản lý sản phẩm-->
+            <div id="quanly_sanpham_cont">
+                <div id="quanly_sanpham">
+                    <H2>QUẢN LÝ SẢN PHẨM</H2>
+                    <form>
+                        <label for="">Mã sản phẩm</label>
+                        <input type="text" id="ip_product_id">
+                        <label for="">Tên sản phẩm</label>
+                        <input type="text" id="ip_product_name">
+                        <label for="">Phân loại</label>
+                        <select name="" id="ip_product_type">
+                            <option value="Đồ điện tử">Đồ điện tử</option>
+                            <option value="Đồ gia dụng">Đồ gia dụng</option>
+                            <option value="Nội thất">Nội thất</option>
+                            <option value="Đồ Y tế">Đồ Y tế</option>
+                            <option value="Thực phẩm">Thực phẩm</option>
+                            <option value="Công cụ">Công cụ</option>
+                            <option value="Máy tính&Laptop">Máy tính&Laptop</option>
+                            <option value="Xe máy">Xe máy</option>
+                        </select>
+
+                    
+                    <label for="">Hình sản phẩm</label>
+                    <input type="text" id="ip_product_img">
+                 </br></br>
+                        <label for="">Kho hàng</label>
+                        <input type="number" id="ip_product_stock">
+                        <label for="">Đã bán</label>
+                        <input type="number" id="ip_product_sold">
+                    </form>
+                 </br></br>
+                
+                    <button onclick="search_product()">Tìm</button>
+                    <button onclick="del_ip()">Nhập lại</button>
+                    <button onclick="delete_product()">Xóa sản phẩm </button>
+                 </br>
+                
+                    <button onclick="add_new_product()">+ Thêm một sản phẩm mới</button>
+                    <button onclick="mod_product()"> Sửa thông tin </button>
+                   
+                
+                
+
+
+
+
+                    <div id="tittle_product_list">
+                        <h3>Sản phẩm hiện có :</h3>
+                    </div>
+
+                    <table id="show_quanly_sanpham">
+                        
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Mã sản phẩm</th>
+                        <th>Phân loại</th>
+                        <th>Tồn kho</th>
+                        <th>Đã bán</th>
+                
+
+                        <!--DOM here-->
+                    </table>    
+
+
+
+                </div>
+
+
+
+            </div>
+            <!--Đơn vị vận chuyển-->
+            <div id="donvi_vanchuyen_cont">
+                <div id="donvi_vanchuyen">
+                    <H2>ĐƠN VỊ VẬN CHUYỂN</H2>
+
+                    <h3>Phương thức vận chuyển: </h3>
+                    <p>Với các tùy chọn giao hàng được <strong style="color: red;">plenty</strong> hỗ trợ, người mua sẽ được <strong style="color: red;">plenty</strong> thông báo về thông tin theo dõi mới nhất của các đơn hàng của họ.</p>
+                    <div id="show_donvi_vanchuyen">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+</div>
+<script src="/js/UPscript.js"></script>
+</body>
+</html>
